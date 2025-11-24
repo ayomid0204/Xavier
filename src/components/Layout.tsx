@@ -250,9 +250,9 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
                 Your premium destination for the latest electronics, gadgets, and smart devices. Experience the future today with our curated selection.
               </p>
               <div className="flex space-x-4 pt-2">
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
+                <a href="https://www.facebook.com/share/1ZJSCMw65G/?mibextid=wwXIfr" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
                 <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
-                <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
+                <a href="https://www.instagram.com/xavier_gadget_hub?igsh=cTN6aDljMTQweWVu&utm_source=qr" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
               </div>
             </div>
 
@@ -260,7 +260,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             <div>
               <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-6">Quick Links</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link to="/" className="hover:text-blue-400 transition-colors">Home</Link></li>
+                <li><Link to="/home" className="hover:text-blue-400 transition-colors">Home</Link></li>
                 <li><Link to="/shop" className="hover:text-blue-400 transition-colors">Shop All Products</Link></li>
                 <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
                 <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact Support</Link></li>
@@ -274,15 +274,15 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               <ul className="space-y-4 text-sm">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                  <span>123 Tech Boulevard, Silicon Valley<br />CA 94043, United States</span>
+                  <span>Computer Village, Ikeja Lagos</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+2347061002464</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                  <span>support@xavierhub.com</span>
+                  <span>oluwadamilareafolabi2909@gmail.com</span>
                 </li>
               </ul>
             </div>
