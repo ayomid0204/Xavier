@@ -116,4 +116,4 @@ export const MOCK_REVIEWS: Review[] = [
   }
 ];
 
-export const WHATSAPP_NUMBER = "2348000000000"; // Replace with actual dealer number
+export const WHATSAPP_NUMBER = "+2347061002464"; // Replace with actual dealer number
