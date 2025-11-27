@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useWishlist } from '../context/WishlistContext';
 import { useCart } from '../context/CartContext';
 import { Heart, Trash2, ShoppingCart, ArrowRight } from 'lucide-react';
+
+const { Link } = ReactRouterDOM;
 
 export const WishlistPage: React.FC = () => {
   const { wishlist, removeFromWishlist } = useWishlist();
