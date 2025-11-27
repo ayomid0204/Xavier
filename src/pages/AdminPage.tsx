@@ -4,8 +4,10 @@ import { useProducts } from '../context/ProductContext';
 import { useAdmin } from '../context/AdminContext';
 import { Category, Product } from '../types';
 import { Trash2, LogOut, LayoutDashboard, Package, Users, MessageSquare, Upload, Settings, Lock, BarChart } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { LOGO_URL } from '../constants';
+
+const { useNavigate } = ReactRouterDOM;
 
 export const AdminPage: React.FC = () => {
   const { user, logout, allUsers, deleteUser, resetUserPassword, changePassword } = useAuth();
