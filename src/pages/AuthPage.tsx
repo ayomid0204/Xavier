@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { ArrowRight, AlertCircle, CheckCircle, Shield, User } from 'lucide-react';
 import { LOGO_URL } from '../constants';
+
+const { Link, useNavigate } = ReactRouterDOM;
 
 interface AuthPageProps {
   type: 'login' | 'signup';
