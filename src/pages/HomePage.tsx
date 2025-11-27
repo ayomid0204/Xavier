@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useProducts } from '../context/ProductContext';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { useWishlist } from '../context/WishlistContext';
 import { WHATSAPP_NUMBER } from '../constants';
 import { ArrowRight, Package, Heart, User, MessageCircle, ChevronRight } from 'lucide-react';
+
+const { Link } = ReactRouterDOM;
 
 export const HomePage: React.FC = () => {
   const { addToCart } = useCart();
