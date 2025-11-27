@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useProducts } from '../context/ProductContext';
 import { Category } from '../types';
 import { useCart } from '../context/CartContext';
@@ -7,6 +7,8 @@ import { useWishlist } from '../context/WishlistContext';
 import { useReviews } from '../context/ReviewContext';
 import { WHATSAPP_NUMBER } from '../constants';
 import { Filter, Heart, Star, MessageCircle } from 'lucide-react';
+
+const { Link, useSearchParams } = ReactRouterDOM;
 
 export const ShopPage: React.FC = () => {
   const [searchParams] = useSearchParams();
