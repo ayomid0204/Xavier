@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { WHATSAPP_NUMBER } from '../constants';
 import { Trash2, Plus, Minus, ShoppingCart, ArrowRight, MessageCircle } from 'lucide-react';
+
+const { Link } = ReactRouterDOM;
 
 export const CartPage: React.FC = () => {
   const { items, addToCart, removeFromCart, updateQuantity, total, clearCart } = useCart();
