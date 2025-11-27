@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { useProducts } from '../context/ProductContext';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
@@ -8,6 +8,8 @@ import { useAuth } from '../context/AuthContext';
 import { WHATSAPP_NUMBER } from '../constants';
 import { Star, ShoppingCart, Heart, ArrowLeft, User as UserIcon, Send, MessageCircle } from 'lucide-react';
 import { Review } from '../types';
+
+const { useParams, useNavigate } = ReactRouterDOM;
 
 export const ProductDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
