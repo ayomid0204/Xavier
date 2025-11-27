@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import * as ReactRouterDOM from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { HomePage } from './pages/HomePage';
 import { ShopPage } from './pages/ShopPage';
@@ -17,6 +17,8 @@ import { ReviewProvider } from './context/ReviewContext';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ProductProvider } from './context/ProductContext';
 import { AdminProvider } from './context/AdminContext';
+
+const { HashRouter, Routes, Route, Navigate, useLocation } = ReactRouterDOM;
 
 // Component to handle global theme application to body
 const ThemeController: React.FC = () => {
